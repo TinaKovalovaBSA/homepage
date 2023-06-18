@@ -1,4 +1,3 @@
-/*General styles*/
 * {
     margin: 0;
     padding: 0;
@@ -68,7 +67,7 @@ body {
         margin-right: 0;
     }
 }
-/*Contact info styles*/
+
 .contact-info__header,
 .contact-info__sub-header {
     text-align: center;
@@ -89,7 +88,7 @@ body {
 .contact-info__block {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .contact-info__block--center {
@@ -125,13 +124,13 @@ body {
 
 .contact-info__avatar {
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
     border: 3px solid;
     border-color: var(--text-decoration-color);
 }
-/*Intro and skills styles*/
+
 .intro {
     display: flex;
     justify-content: start;
@@ -168,7 +167,7 @@ body {
     color: var(--secondary-text-color);
     text-align: justify;
 }
-/*Experience and additional info styles*/
+
 .experiences {
     flex: 1 1 60%;
     margin-right: 50px;
@@ -200,22 +199,17 @@ body {
     margin-bottom: 25px;
 }
 
-.experiences__company-project-role {
-    color: var(--durability-text-color);
-    text-align: left;
-    margin-bottom: 10px;
-    font-size: 15px;
-}
-
-.experiences__company-project-name {
-    color: var(--primary-text-color);
-    text-align: left;
-    margin-bottom: 10px;
-}
-
 .experiences__company-project-responsibilities {
     color: var(--secondary-text-color);
     padding-left: 20px;
+}
+
+.experiences__company-project_info{
+    margin-top: 20px;
+    
+}
+.experiences__company-project_link{
+    color: var(--secondary-text-color);
 }
 
 .additional-info {
@@ -232,14 +226,16 @@ body {
     margin-bottom: 20px;
 }
 
-.additional-info__education-university-durability {
+.additional-info__education-university-durability, 
+.experiences__company-project_durability {
     color: var(--durability-text-color);
     text-align: left;
     margin-bottom: 10px;
     font-size: 15px;
 }
 
-.additional-info__education-university-speciality {
+.additional-info__education-university-speciality, 
+.experiences__company-project_name {
     color: var(--primary-text-color);
     text-align: left;
     margin-bottom: 10px;
